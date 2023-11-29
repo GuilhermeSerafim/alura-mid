@@ -13,8 +13,10 @@ for(i = 0; i < listaDeTeclas.length; i++) {
     }
     
     //Adicionando classe à tecla pressionada
-    tecla.onkeydown = () => {
-        tecla.classList.add('ativa');
+    tecla.onkeydown = (evento) => {
+        if(evento.code === "Enter" || evento.code === "Space") {
+            tecla.classList.add('ativa');
+        }
     }
 
     tecla.onkeyup = () => {
