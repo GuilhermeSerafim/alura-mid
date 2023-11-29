@@ -1,6 +1,6 @@
 function tocaSom(seletorAudio) { //Está preparado para receber um id dinamicamente
     const elemento = document.querySelector(seletorAudio);
-    if (elemento != null && elemento.localName === 'audio') {
+    if (elemento && elemento.localName === 'audio') {
             elemento.play();
     } else {
         alert('Elemento não encontrado ou seletor inválido');
