@@ -11,4 +11,13 @@ for(i = 0; i < listaDeTeclas.length; i++) {
     tecla.onclick = () => {
         tocaSom(idAudio);
     }
+    
+    //Adicionando classe à tecla pressionada
+    tecla.onkeydown = () => {
+        tecla.classList.add('ativa');
+    }
+
+    tecla.onkeyup = () => {
+        tecla.classList.remove('ativa');
+    }
 }
