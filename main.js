@@ -28,3 +28,5 @@ for (i = 0; i < listaDeTeclas.length; i++) {
         tecla.classList.remove('ativa');
     }
 }
+//onclick permite apenas um manipulador de evento para um elemento específico. 
+//onclick é mais restrito que addEventListener('click') e menos usado
